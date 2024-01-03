@@ -6,11 +6,11 @@ import urandom
 import urequests
 
 # WiFi credentials
-wifi_ssid = "dy-2-2G"
-wifi_password = "qwer1234"
+wifi_ssid = "WIFINAME"
+wifi_password = "WIFI-PASSWORD"
 
 # MQTT broker information
-mqtt_server = "121.78.116.56"  # Replace with your MQTT broker address
+mqtt_server = "IP-ADDRESS-OF-THE-BROKER"  # Replace with your MQTT broker address
 mqtt_port = 1883  # Replace with your broker's port
 mqtt_topic_publish = b"sensor_data"  # Topic to publish sensor data
 mqtt_topic_subscribe = b"sub_data"   # Topic to subscribe for received data
@@ -19,7 +19,7 @@ mqtt_topic_subscribe = b"sub_data"   # Topic to subscribe for received data
 client_id = b"esp_client"
 
 # HTTP endpoint URL
-endpoint_url = 'http://121.78.116.56/plants-ai/sen.php'
+endpoint_url = 'http://IP-ADDRESS/plants-ai/sen.php'
 
 # Function to connect to WiFi
 def connect_to_wifi():
