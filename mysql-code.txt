@@ -1,0 +1,12 @@
+-- Create a new database
+CREATE DATABASE sensor_data_db;
+
+-- Use the created database
+USE sensor_data_db;
+
+-- Create a table to store sensor data
+CREATE TABLE sensor_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sensor_value INT,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
